@@ -432,7 +432,9 @@
     .candidate-card:hover::before { opacity: 1; }
 
     .candidate-img {
-        height: 260px;
+        aspect-ratio: 3 / 4;
+        width: 100%;
+        height: auto;
         background: linear-gradient(135deg, var(--light-maroon), var(--dark-maroon));
         display: flex;
         align-items: center;
@@ -768,7 +770,9 @@
     }
 
     .admin-candidate-card .candidate-img {
-        height: 200px;
+        aspect-ratio: 3 / 4;
+        width: 100%;
+        height: auto;
         font-size: 3.5rem;
     }
 
@@ -1514,7 +1518,7 @@
                 maxImageWidth: 800,
                 maxImageHeight: 800,
                 cropping: true,
-                croppingAspectRatio: 1,
+                croppingAspectRatio: 0.75,
                 showAdvancedOptions: false,
                 styles: {
                     palette: {
